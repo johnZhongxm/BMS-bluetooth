@@ -1,0 +1,16 @@
+<view class='m1'>
+  <view class='header'>
+    <text class='title'>参数设置</text>
+  </view>
+  <view class='body'>
+    <form bindsubmit='submit'>
+      <view class='password'>
+        <text>密  码：</text>
+        <input password='true' name="pwd" value='123456'></input>
+      </view>
+      <view>
+        <button form-type='submit'>登录</button>
+      </view>
+    </form>
+  </view>
+</view>

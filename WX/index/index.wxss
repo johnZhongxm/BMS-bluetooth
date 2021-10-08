@@ -1,0 +1,138 @@
+/* 全局样式 */
+page {
+  color: #333;
+}
+.page {
+  height: 100%;
+  font-family: 'PingFang SC',
+         'Helvetica Neue',
+         Helvetica,
+         'Droid Sans Fallback',
+         'Microsoft Yachei',
+         sans-serif;
+} 
+/* 侧边栏样式 */
+.page-slidebar {
+  height: 100%;
+  width: 450rpx;
+  position: fixed;
+  background-color:rgb(52, 99, 226);
+  z-index: 0;
+}
+  
+/* 控制侧边栏的内容距离顶部的距离 */
+.page-content {
+  padding-top: 60rpx;
+}
+  
+/* 侧边栏内容的 css 样式 */
+.wc {
+  color:black;
+  padding: 30rpx 0 30rpx 150rpx;
+  border-bottom: 1px solid #eee; 
+}
+  
+/* 当屏幕向左滑动，出现侧边栏的时候，主页的动画样式 */
+/* scale：取值范围 0~1 ，表示屏幕大小是原来的百分之几，可以自己修改成 0.8 试下*/
+/* translate(60%,0%) 表示向左滑动的时候，侧边栏占用平时的宽度为 60%  */
+.c-state {
+  transform: rotate(0deg) scale(1) translate(60%, 0%);
+  -webkit-transform: rotate(0deg) scale(1) translate(60%, 0%);
+}
+  
+/* 主页样式 */
+.page-top {
+  height: 100%;
+  position: fixed;
+  width: 750rpx;
+  background-color:white;
+  z-index: 0;
+  transition: All 0.4s ease;
+  -webkit-transition: All 0.4s ease;
+}
+/* 左上角图标的样式 */
+.page-top image {
+  position: absolute;
+  width: 68rpx;
+  height: 68rpx;
+  left: 20rpx;
+  top: 20rpx;
+}
+  
+/* 遮盖层样式 */
+.cover{
+  width: 100%;
+  height: 100%;
+  background-color:gray;
+  opacity: 0.5;
+  z-index: 9000;
+}
+  
+.content{
+  margin-top: 100rpx; 
+}
+
+
+/*------------------------------------------------------------*/
+.devices_summary {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 16px;
+}
+.device_list {
+  height: 400px;
+  margin: 50px 5px;
+  margin-top: 0;
+  border: 1px solid #EEE;
+  border-radius: 5px;
+  width: auto;
+}
+.device_item {
+  border-bottom: 1px solid #EEE;
+  padding: 10px;
+  color: #666;
+}
+.device_item_hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+.connected_info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #F0F0F0;
+  padding: 10px;
+  padding-bottom: 80px;
+  margin-bottom: env(safe-area-inset-bottom);
+  font-size: 14px;
+  min-height: 100px;
+  box-shadow: 0px 0px 3px 0px;
+}
+.connected_info .operation {
+  position: absolute;
+  display: inline-block;
+  right: 30px;
+}
+.itemView{
+  margin-top: 10rpx; 
+  height: 100rpx;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.shape{
+  widows: 100%;
+  height: 50rpx;
+  align-items: center;
+}
+.col1{
+  background-color: rgb(221, 107, 107);
+}
+.col2{
+  background-color: rgb(94, 143, 233);
+}
+.batTxt{
+  width:75px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:clip
+}
